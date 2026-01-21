@@ -24,3 +24,7 @@
     python net_audit.py -t 192.168.1.1/24 -m discovery
    # Linux / macOS (Run with sudo)
     sudo python3 net_audit.py -t 192.168.1.1/24 -m discovery
+   # Basic scan (Ports 1-1024)
+    python net_audit.py -t 192.168.1.15 -m port
+   # Advanced scan (Specific range + faster threads)
+    python net_audit.py -t 192.168.1.15 -m port -s 1 -e 5000 --threads 200
