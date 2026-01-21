@@ -38,6 +38,9 @@ Run the tool using `python net_audit.py`. You must select a mode: `discovery` or
 ### 1. Port Scan (Server/Website)
 Best for auditing specific servers. It resolves domains, checks Web Headers, and scans ports with service detection.
 ```bash
+# Scan a Network (Discovery scan)
+python net_audit.py -t 192.168.1.0/24 -m discovery
+
 # Scan a website (Standard Scan)
 python net_audit.py -t scanme.nmap.org -m port
 
